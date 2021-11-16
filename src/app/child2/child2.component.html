@@ -1,0 +1,34 @@
+<div class="main-container2">
+  <div class="sub-container2">
+    <div class="card">
+      <h3 class="card-header text-center">REAL TIME DATA</h3>
+    </div>
+    <div id="data-Cards">
+      <div class="card dataCard" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Total Confirmed Worldwide</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Real Time Data</h6>
+          <p class="card-text dataNumber">
+            {{ totalRecord?.TotalConfirmed }}
+          </p>
+        </div>
+      </div>
+      <div class="card dataCard" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Total Deaths Worldwide</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Real Time Data</h6>
+          <p class="card-text dataNumber">{{ totalRecord?.TotalDeaths }}</p>
+        </div>
+      </div>
+      <div class="card dataCard" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Total Recovered Worldwide</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Real Time Data</h6>
+          <p class="card-text dataNumber">
+            {{ totalRecord?.TotalRecovered }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

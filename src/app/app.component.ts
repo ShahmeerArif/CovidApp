@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'covid-app2';
+  selectedCountry: any;
+
+  getSelectedCountry(value: any) {
+    this.selectedCountry = value;
+  }
 }

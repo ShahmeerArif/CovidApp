@@ -1,0 +1,22 @@
+<div class="main-container">
+  <div class="sub-container">
+    <div class="card">
+      <h3 class="card-header text-center">Search By Country</h3>
+      <form class="dataForm">
+        <h4 class="card-title">Enter Country Name</h4>
+        <div id="selectCountry">
+          <select
+            class="form-control form-control-md"
+            (change)="onCountryChange($event)"
+          >
+            <option value="0">Select Country</option>
+            <option *ngFor="let country of countries" [value]="country.Slug">
+              {{ country.Country }}
+            </option>
+          </select>
+        </div>
+        <button class="btn btn-primary btn-data">Search Data</button>
+      </form>
+    </div>
+  </div>
+</div>
